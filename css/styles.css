@@ -39,30 +39,68 @@ form input:focus{
     background-color: transparent;
     width: 26px;
     height: 26px;
-    background-image: url(../img/icon2.svg);
+}
+.top-btn1-icon{
+    fill: #E8E8E8;
+}
+.top-btn1:hover .top-btn1-icon{
+    fill:#F16D7F;
+}
+.top-btn1:active .top-btn1-icon{
+    fill:#E8E8E8;
 }
 .top-btn2{
     border: none;
     background-color: transparent;
     width: 32px;
     height: 23px;
-    background-image: url(../img/icon3.svg);
+}
+.top-btn2-icon{
+    fill: #E8E8E8;
+}
+.top-btn2:hover .top-btn2-icon{
+    fill:#F16D7F;
+}
+.top-btn2:active .top-btn2-icon{
+    fill:#E8E8E8;
 }
 .top-btn3{
     border: none;
     background-color: transparent;
     width: 29px;
     height: 29px;
-    background-image: url(../img/icon4.svg);
     margin-left: 33px;
+}
+.top-btn3-icon{
+    fill: #E8E8E8;
+}
+.top-btn3:hover .top-btn3-icon{
+    fill:#F16D7F;
+}
+.top-btn3:active .top-btn3-icon{
+    fill:#E8E8E8;
 }
 .top-btn4{
     border: none;
     background-color: transparent;
     width: 41px;
     height: 37px;
-    background-image: url(../img/icon5.svg);
     margin-left: 33px;
+}
+.top-btn4-icon1{
+    fill: #E8E8E8;
+}
+.top-btn4-icon2{
+    fill: #F16D7F;
+}
+.top-btn4-icon3{
+    fill: white;
+}
+.top-btn4:hover .top-btn4-icon1{
+    fill:#F16D7F;
+}
+.top-btn4:active .top-btn4-icon1{
+    fill:#E8E8E8;
 }
 .top-left{
     min-width: 157px;
@@ -72,6 +110,12 @@ form input:focus{
 }
 .top-ref{
     margin-right: 41px;
+}
+.top-ref:hover{
+    filter: brightness(50%);
+}
+.top-ref:active{
+    filter: none;
 }
 .img-right{
     margin-left: 33px;
@@ -236,9 +280,27 @@ form input:focus{
 .shadow-img{
     vertical-align:middle;
     margin-right: 10px;
+    fill: white;
 }
-.product:hover .shadow{
-    z-index: 2;
+.shadow-btn:hover{
+    background: gray;
+    border: 1px solid black;
+}
+.shadow-btn:hover span{
+    color: black;
+}
+.shadow-btn:hover .shadow-img{
+    fill:black;
+}
+.shadow-btn:active{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.shadow-btn:active span{
+    color: white;
+}
+.shadow-btn:active .shadow-img{
+    fill:white;
 }
 .product-title{
     font-family: Lato;
@@ -303,9 +365,10 @@ form input:focus{
 .terms-img1{
     display: block;
     margin: 0 auto;
-    width: 45px;
+    width: 46px;
     height: 32px;
     margin-bottom: 28px;
+    fill: #F16D7F;
 }
 .terms-img2{
     display: block;
@@ -313,6 +376,7 @@ form input:focus{
     width: 40px;
     height: 40px;
     margin-bottom: 19px;
+    fill: #F16D7F;
 }
 .terms-img3{
     display: block;
@@ -320,6 +384,7 @@ form input:focus{
     width: 47px;
     height: 34px;
     margin-bottom: 25px;
+    fill: #F16D7F;
 }
 .terms-title{
     font-family: Lato;
@@ -387,6 +452,7 @@ form input:focus{
     line-height: 40px;
     text-align: center;
     color: #222224;
+    text-transform: uppercase;
 }
 .subscrube-sub-title{
     font-family: Lato;
@@ -396,6 +462,7 @@ form input:focus{
     line-height: 21px;
     text-align: center;
     color: #000000;
+    text-transform: uppercase;
 }
 .mail{
     box-sizing: border-box;
@@ -497,10 +564,22 @@ form input:focus{
     color: #636363;
     text-transform: uppercase;
     margin: 65px 0px 66px;
+    list-style-type: none;
+    display: flex;
 }
-.arrivals-text-right2{
+.arrivals-text-right li:after{
+    content: "/";
+    color: rgba(99, 99, 99, 1);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.arrivals-text-right li:last-child:after{
+    content: "";
+}
+.arrivals-text-right li:hover{
     color: #F16D7F;
 }
+
 .items-header{
     display: flex;
 }
@@ -566,21 +645,24 @@ form input:focus{
     background: #F7F7F7;
     height: 777px;
 }
-.large-btn-left{
+.large-btn{
     border: none;
     background-color: transparent;
     width: 47px;
     height: 47px;
-    background-image: url(../img/left-btn.svg);
     margin: 365px 0px;
 }
-.large-btn-right{
-    border: none;
-    background-color: transparent;
-    width: 47px;
-    height: 47px;
-    background-image: url(../img/right-btn.svg);
-    margin: 365px 0px;
+.large-btn-bck{
+    fill: #D8D8D8;
+}
+.large-btn-icon{
+    fill: #000000;
+}
+.large-btn:hover .large-btn-icon{
+    fill: #F16D7F;
+}
+.large-btn:active .large-btn-icon{
+    fill: #000000;
 }
 .collection{
     margin-top: -65px;
@@ -701,11 +783,30 @@ form input:focus{
     margin: 0 auto;
     position: relative;
 }
+.product-btn:hover{
+    background: #F16D7F;
+}
+.product-btn:hover span{
+    color: #FFFFFF;
+}
+.product-btn:active{
+    background: transparent;
+}
+.product-btn:active span{
+    color: #F16D7F;
+}
 .product-btn-img{
     vertical-align:middle;
     margin-right: 10px;
     position: absolute;
     left: 20px;
+    fill: #EF5B70;
+}
+.product-btn:hover .product-btn-img{
+    fill: white;
+}
+.product-btn:active .product-btn-img{
+    fill: #EF5B70;
 }
 /* Стили для Cart*/
 .shopping{
@@ -773,9 +874,22 @@ form input:focus{
     color: #656565;;
 }
 .mango-x{
+    fill: #575757;
+}
+.mango-btn-x{
+    border: none;
+    background-color: transparent;
     position: absolute;
     top: 28px;
     right: 22px;
+    width: 18px;
+    height: 18px;
+}
+.mango-btn-x:hover .mango-x{
+    fill: #F16D7F;
+}
+.mango-btn-x:active .mango-x{
+    fill: #575757;
 }
 .shopping{
     display: flex;
@@ -795,6 +909,18 @@ form input:focus{
     line-height: 17px;
     color: #000000;
     text-transform: uppercase;
+}
+.shopping-button:hover{
+    background: #000000;
+}
+.shopping-button:hover span{
+    color: white;
+}
+.shopping-button:active{
+    background: white;
+}
+.shopping-button:active span{
+    color: #000000;
 }
 .shopping-title{
     font-family: Lato;
@@ -835,6 +961,18 @@ form input:focus{
     color: #4A4A4A;
     text-transform: uppercase;
 }
+.shopping-quote:hover{
+    background: #4A4A4A;
+}
+.shopping-quote:hover span{
+    color: white;
+}
+.shopping-quote:active{
+    background: transparent;
+}
+.shopping-quote:active span{
+    color: #4A4A4A;
+}
 .checkout{
     width: 360px;
     min-height: 214px;
@@ -860,6 +998,18 @@ form input:focus{
     line-height: 19px;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+.checkout-button:hover{
+    background: #FFFFFF;
+}
+.checkout-button:hover span{
+    color: #F16D7F;
+}
+.checkout-button:active{
+    background: #F16D7F;
+}
+.checkout-button:active span{
+    color: #FFFFFF;
 }
 .checkout-line{
     width: 273px;
@@ -893,4 +1043,152 @@ form input:focus{
 .checkout-grand span{
     margin-left: 15px;
     color: #F16D7F;
+}
+/* Стили для Registration*/
+.flexer{
+    display: flex;
+}
+.registration{
+    margin-top: 64px;
+    width: 360px;
+}
+.registration span{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+.registration-field{
+    width: 360px;
+    height: 45px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 1px solid #A4A4A4;
+    padding-left: 16px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+.sex{
+    border: 1px solid #A4A4A4;
+    margin-right: 10px;
+}
+.sex:nth-child(2){
+    margin-left: 20px;
+}
+.sex-text{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    margin-top: 31px;
+    margin-bottom: 33px;
+}
+.registration-text{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-top: 19px;
+    margin-bottom: 29px;
+}
+.registration-btn{
+    min-width: 167px;
+    height: 50px;
+    background: #F16D7F;
+    box-sizing: border-box;
+    padding: 16px 29px;
+    border: none;
+    margin-bottom: 96px;
+}
+.registration-btn span{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+.join{
+    fill:white;
+}
+.registration-btn:hover{
+    background: white;
+    border: solid 1px #F16D7F;
+}
+.registration-btn:hover span{
+    color: #F16D7F;
+}
+.registration-btn:hover .join{
+    fill: #F16D7F;
+}
+.registration-btn:active{
+    background: #F16D7F;
+    border: none;
+}
+.registration-btn:active span{
+    color: white;
+}
+.registration-btn:active .join{
+    fill: white;
+}
+.perks{
+    margin-top: 64px;
+    margin-left: 128px;
+}
+.perks-title{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+.perks-txt{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 21px;
+}
+.perks-list{
+    list-style-type: none;
+    position: relative;
+}
+.perks-list li{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 16px;
+    margin-left: 48px;
+}
+.perks-list li:before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 23px;
+    background-image: url(../img/registration-check.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    left: 10px;
 }
