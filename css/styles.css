@@ -21,6 +21,10 @@ form input:focus{
     position: relative;
     flex-grow: 1;
 }
+.terms-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
 .wrapper{
     display: flex;
     justify-content: space-between;
@@ -39,30 +43,68 @@ form input:focus{
     background-color: transparent;
     width: 26px;
     height: 26px;
-    background-image: url(../img/icon2.svg);
+}
+.top-btn1-icon{
+    fill: #E8E8E8;
+}
+.top-btn1:hover .top-btn1-icon{
+    fill:#F16D7F;
+}
+.top-btn1:active .top-btn1-icon{
+    fill:#E8E8E8;
 }
 .top-btn2{
     border: none;
     background-color: transparent;
     width: 32px;
     height: 23px;
-    background-image: url(../img/icon3.svg);
+}
+.top-btn2-icon{
+    fill: #E8E8E8;
+}
+.top-btn2:hover .top-btn2-icon{
+    fill:#F16D7F;
+}
+.top-btn2:active .top-btn2-icon{
+    fill:#E8E8E8;
 }
 .top-btn3{
     border: none;
     background-color: transparent;
     width: 29px;
     height: 29px;
-    background-image: url(../img/icon4.svg);
     margin-left: 33px;
+}
+.top-btn3-icon{
+    fill: #E8E8E8;
+}
+.top-btn3:hover .top-btn3-icon{
+    fill:#F16D7F;
+}
+.top-btn3:active .top-btn3-icon{
+    fill:#E8E8E8;
 }
 .top-btn4{
     border: none;
     background-color: transparent;
     width: 41px;
     height: 37px;
-    background-image: url(../img/icon5.svg);
     margin-left: 33px;
+}
+.top-btn4-icon1{
+    fill: #E8E8E8;
+}
+.top-btn4-icon2{
+    fill: #F16D7F;
+}
+.top-btn4-icon3{
+    fill: white;
+}
+.top-btn4:hover .top-btn4-icon1{
+    fill:#F16D7F;
+}
+.top-btn4:active .top-btn4-icon1{
+    fill:#E8E8E8;
 }
 .top-left{
     min-width: 157px;
@@ -72,6 +114,12 @@ form input:focus{
 }
 .top-ref{
     margin-right: 41px;
+}
+.top-ref:hover{
+    filter: brightness(50%);
+}
+.top-ref:active{
+    filter: none;
 }
 .img-right{
     margin-left: 33px;
@@ -83,6 +131,7 @@ form input:focus{
 }
 .brand-man{
     margin-left: -230px;
+    display: block;
 }
 .brand-title{
     font-family: Lato;
@@ -94,6 +143,7 @@ form input:focus{
 }
 .big{
     text-transform: uppercase;
+    font-size: 60px
 }
 .brand-subtitle{
     font-family: Lato;
@@ -107,7 +157,7 @@ form input:focus{
     margin: 290px 331px 358px 64px;
     border-left: 12px #F16D7F solid;
     padding-left: 16px;
-    min-width: 423px;
+    min-width: 425px;
 }
 /* Стили для Triplet */
 .triplet{
@@ -120,16 +170,22 @@ form input:focus{
     width: 360px;
     height: 260px;
     background-image: url(../img/man.svg);
+    display:flex;
+    flex-direction: column;
 }
 .triplet-woman{
     width: 360px;
     height: 260px;
     background-image: url(../img/woman.svg);
+    display:flex;
+    flex-direction: column;
 }
 .triplet-kid{
     width: 360px;
     height: 260px;
     background-image: url(../img/kid.svg);
+    display:flex;
+    flex-direction: column;
 }
 .triplet-wide{ 
     margin-top: 30px;
@@ -139,13 +195,14 @@ form input:focus{
     height: 180px;
     background-image: url(../img/wide.svg);
     display: flex;
+    flex-direction: column;
 }
 .wide-text{
-    margin: 65px 485px;
+    margin-top: 65px;
     text-align: center;
 }
 .triplet-text{
-    margin: 105px 103px;
+    margin-top: 105px;
     text-align: center; 
 }
 .triplet-title{
@@ -194,7 +251,7 @@ form input:focus{
     margin-bottom: 47px;
 }
 .items-product{
-    margin-bottom: 48px;
+    margin-bottom: 18px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -236,9 +293,27 @@ form input:focus{
 .shadow-img{
     vertical-align:middle;
     margin-right: 10px;
+    fill: white;
 }
-.product:hover .shadow{
-    z-index: 2;
+.shadow-btn:hover{
+    background: gray;
+    border: 1px solid black;
+}
+.shadow-btn:hover span{
+    color: black;
+}
+.shadow-btn:hover .shadow-img{
+    fill:black;
+}
+.shadow-btn:active{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.shadow-btn:active span{
+    color: white;
+}
+.shadow-btn:active .shadow-img{
+    fill:white;
 }
 .product-title{
     font-family: Lato;
@@ -303,9 +378,10 @@ form input:focus{
 .terms-img1{
     display: block;
     margin: 0 auto;
-    width: 45px;
+    width: 46px;
     height: 32px;
     margin-bottom: 28px;
+    fill: #F16D7F;
 }
 .terms-img2{
     display: block;
@@ -313,6 +389,7 @@ form input:focus{
     width: 40px;
     height: 40px;
     margin-bottom: 19px;
+    fill: #F16D7F;
 }
 .terms-img3{
     display: block;
@@ -320,6 +397,7 @@ form input:focus{
     width: 47px;
     height: 34px;
     margin-bottom: 25px;
+    fill: #F16D7F;
 }
 .terms-title{
     font-family: Lato;
@@ -343,12 +421,16 @@ form input:focus{
 }
 /* Стили для subscribe */
 .subscribe{
-    background-image: url(../img/subscribe.svg);
+    background-image: url(../img/subscribe.png);
     background-repeat: no-repeat;
     background-position: left;
     width: 1600px;
     height: 448px;
     margin: 0 auto;
+}
+.subscribe-wrapper{
+    display: flex;
+    justify-content: space-between;
 }
 .subscribe-info{
     margin-top: 97px;
@@ -387,8 +469,9 @@ form input:focus{
     line-height: 40px;
     text-align: center;
     color: #222224;
+    text-transform: uppercase;
 }
-.subscrube-sub-title{
+.subscribe-subtitle{
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
@@ -396,6 +479,7 @@ form input:focus{
     line-height: 21px;
     text-align: center;
     color: #000000;
+    text-transform: uppercase;
 }
 .mail{
     box-sizing: border-box;
@@ -438,6 +522,10 @@ form input:focus{
 .footer{
     background: #222224;
 }
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
 .footer-text{
     font-family: Lato;
     font-style: normal;
@@ -478,6 +566,10 @@ form input:focus{
 .arrivals{
     background: #F8F3F4;
 }
+.arrivals-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
 .arrivals-text-left{
     font-family: Lato;
     font-style: normal;
@@ -489,6 +581,11 @@ form input:focus{
     margin: 59px 0px 60px;
 }
 .arrivals-text-right{
+    margin: 65px 0px 66px;
+    list-style-type: none;
+    display: flex;
+}
+.arrivals-text-right li a{
     font-family: Lato;
     font-style: normal;
     font-weight: 300;
@@ -496,10 +593,22 @@ form input:focus{
     line-height: 17px;
     color: #636363;
     text-transform: uppercase;
-    margin: 65px 0px 66px;
+    text-decoration: none;
 }
-.arrivals-text-right2{
+.arrivals-text-right li:after{
+    content: "/";
+    color: rgba(99, 99, 99, 1);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.arrivals-text-right li:last-child:after{
+    content: "";
+}
+.arrivals-text-right li a:hover{
     color: #F16D7F;
+}
+.arrivals-text-right li a:active{
+    color: #636363;
 }
 .items-header{
     display: flex;
@@ -542,6 +651,9 @@ form input:focus{
     position: relative;
     white-space: nowrap;
 }
+.items-list li:nth-child(3){
+    margin-right: 30px;
+}
 .items-list li::after{
     content: "";
     display: block;
@@ -566,21 +678,24 @@ form input:focus{
     background: #F7F7F7;
     height: 777px;
 }
-.large-btn-left{
+.large-btn{
     border: none;
     background-color: transparent;
     width: 47px;
     height: 47px;
-    background-image: url(../img/left-btn.svg);
     margin: 365px 0px;
 }
-.large-btn-right{
-    border: none;
-    background-color: transparent;
-    width: 47px;
-    height: 47px;
-    background-image: url(../img/right-btn.svg);
-    margin: 365px 0px;
+.large-btn-bck{
+    fill: #D8D8D8;
+}
+.large-btn-icon{
+    fill: #000000;
+}
+.large-btn:hover .large-btn-icon{
+    fill: #F16D7F;
+}
+.large-btn:active .large-btn-icon{
+    fill: #000000;
 }
 .collection{
     margin-top: -65px;
@@ -590,6 +705,8 @@ form input:focus{
     text-align: center;
     padding-top: 65px;
     padding-bottom: 65px;
+    display: flex;
+    flex-direction: column;
 }
 .collection-subtitle{
     font-family: Lato;
@@ -675,7 +792,6 @@ form input:focus{
 }
 .collection-extra{
     margin: 0 auto;
-    width: 300px;
 }
 .product-terms{
     background: #222224;
@@ -701,17 +817,40 @@ form input:focus{
     margin: 0 auto;
     position: relative;
 }
+.product-btn:hover{
+    background: #F16D7F;
+}
+.product-btn:hover span{
+    color: #FFFFFF;
+}
+.product-btn:active{
+    background: transparent;
+}
+.product-btn:active span{
+    color: #F16D7F;
+}
 .product-btn-img{
     vertical-align:middle;
     margin-right: 10px;
     position: absolute;
     left: 20px;
+    fill: #EF5B70;
+}
+.product-btn:hover .product-btn-img{
+    fill: white;
+}
+.product-btn:active .product-btn-img{
+    fill: #EF5B70;
 }
 /* Стили для Cart*/
 .shopping{
     margin-top: 96px;
     margin-bottom: 128px;
     width: 652px;
+}
+.shopping-wrapper{
+    display: flex;
+    justify-content: space-between;
 }
 .mango{
     display: flex;
@@ -773,16 +912,29 @@ form input:focus{
     color: #656565;;
 }
 .mango-x{
+    fill: #575757;
+}
+.mango-btn-x{
+    border: none;
+    background-color: transparent;
     position: absolute;
     top: 28px;
     right: 22px;
+    width: 18px;
+    height: 18px;
+}
+.mango-btn-x:hover .mango-x{
+    fill: #F16D7F;
+}
+.mango-btn-x:active .mango-x{
+    fill: #575757;
 }
 .shopping{
     display: flex;
 }
 .shopping-button{
     border: 1px solid #A4A4A4;
-    min-width: 234px;
+    width: 234px;
     height: 49px;
     background: transparent;
     margin-top: 72px;
@@ -795,6 +947,18 @@ form input:focus{
     line-height: 17px;
     color: #000000;
     text-transform: uppercase;
+}
+.shopping-button:hover{
+    background: #000000;
+}
+.shopping-button:hover span{
+    color: white;
+}
+.shopping-button:active{
+    background: white;
+}
+.shopping-button:active span{
+    color: #000000;
 }
 .shopping-title{
     font-family: Lato;
@@ -821,7 +985,7 @@ form input:focus{
 }
 .shopping-quote{
     border: 1px solid #A4A4A4;
-    min-width: 100px;
+    width: 100px;
     height: 34px;
     background: transparent;
     margin-top: 24px;
@@ -834,6 +998,18 @@ form input:focus{
     line-height: 13px;
     color: #4A4A4A;
     text-transform: uppercase;
+}
+.shopping-quote:hover{
+    background: #4A4A4A;
+}
+.shopping-quote:hover span{
+    color: white;
+}
+.shopping-quote:active{
+    background: transparent;
+}
+.shopping-quote:active span{
+    color: #4A4A4A;
 }
 .checkout{
     width: 360px;
@@ -860,6 +1036,18 @@ form input:focus{
     line-height: 19px;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+.checkout-button:hover{
+    background: #FFFFFF;
+}
+.checkout-button:hover span{
+    color: #F16D7F;
+}
+.checkout-button:active{
+    background: #F16D7F;
+}
+.checkout-button:active span{
+    color: #FFFFFF;
 }
 .checkout-line{
     width: 273px;
@@ -893,4 +1081,574 @@ form input:focus{
 .checkout-grand span{
     margin-left: 15px;
     color: #F16D7F;
+}
+/* Стили для Registration*/
+.registration-wrapper{
+    display: flex;
+}
+.registration{
+    margin-top: 64px;
+    width: 360px;
+}
+.registration span{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+.registration-field{
+    width: 360px;
+    height: 45px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 1px solid #A4A4A4;
+    padding-left: 16px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+.sex{
+    border: 1px solid #A4A4A4;
+    margin-right: 10px;
+}
+.sex:nth-child(2){
+    margin-left: 20px;
+}
+.sex-text{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    margin-top: 31px;
+    margin-bottom: 33px;
+}
+.registration-text{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-top: 19px;
+    margin-bottom: 29px;
+}
+.registration-btn{
+    min-width: 167px;
+    height: 50px;
+    background: #F16D7F;
+    box-sizing: border-box;
+    padding: 16px 29px;
+    border: none;
+    margin-bottom: 96px;
+}
+.registration-btn span{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+.join{
+    fill:white;
+}
+.registration-btn:hover{
+    background: white;
+    border: solid 1px #F16D7F;
+}
+.registration-btn:hover span{
+    color: #F16D7F;
+}
+.registration-btn:hover .join{
+    fill: #F16D7F;
+}
+.registration-btn:active{
+    background: #F16D7F;
+    border: none;
+}
+.registration-btn:active span{
+    color: white;
+}
+.registration-btn:active .join{
+    fill: white;
+}
+.perks{
+    margin-top: 64px;
+    margin-left: 128px;
+}
+.perks-title{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+.perks-txt{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 21px;
+}
+.perks-list{
+    list-style-type: none;
+    position: relative;
+}
+.perks-list li{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 16px;
+    margin-left: 48px;
+}
+.perks-list li:before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 23px;
+    background-image: url(../img/registration-check.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    left: 10px;
+}
+@media (max-width: 1024px){
+    .container{
+        max-width: 736px; 
+    }
+    .top-left{
+        margin-left: 32px;
+    }
+    .top-right{
+        margin-right: 32px;
+    }
+    .brand-title{
+        font-size: 44px;
+    }
+    .brand-subtitle{
+        font-size: 44px;
+    }
+    .big{
+        font-size: 57px;
+    }
+    .brand-man{
+        width: 386px;
+        height: 386px;
+        margin-left: -80px;
+    }
+    .text-block{
+        margin: 138px 33px 137px 0px;
+        min-width: 390px;
+    }
+    .wide{
+        width: 736px;
+        height: 116px;
+        background-size: contain;
+    }
+    .wide-text{
+        margin-top: 33px;
+    }
+    .triplet-man{
+        width: 232px;
+        height: 167px;
+    }
+    .triplet-woman{
+        width: 232px;
+        height: 167px;
+    }
+    .triplet-kid{
+        width: 232px;
+        height: 167px;
+    }
+    .triplet-text{
+        margin-top: 59px;
+    }
+    .triplet{
+        width: 736px;
+        margin-top: 20px;
+    }
+    .items-product{
+        margin-bottom: 15px;
+    }
+    .product{
+        margin-bottom: 18px;
+    }
+    .items-title{
+        margin-top: 154px;
+    }
+    .items-text{
+        margin-top: 3px;
+        margin-bottom: 73px;
+    }
+    .terms{
+        margin-top: 65px;
+        padding-top: 48px;
+        padding-bottom: 16px;
+    }
+    .terms-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .terms-block{
+        margin-bottom: 48px;
+    }
+    .subscribe{
+        width: 768px;
+        height: 693px;
+        background-image: url(../img/subscribe768.png);
+    }
+    .subscribe-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe-info{
+        margin-top: 64px;
+        margin-bottom: 48px;
+    }
+    .subscribe-input{
+        margin-top: 0px;
+    }
+    .subscribe-input-low{
+        margin-top: 27px;
+    }
+    #catalog-hide{
+        display: none;
+    }
+    .items-list{
+        margin-left: 0px;
+    }
+    .items-header{
+        justify-content: space-between;
+    }
+    #product-hide1{
+        display: none;
+    }
+    .large-img{
+        height: 624px;
+        background-size: contain;
+    }
+    .collection{
+        margin-top: 0px;
+    }
+    .large-woman{
+        height:565px;
+        width: 466px;
+        margin-top: 29px;
+    }
+    .large-btn{
+        margin: 288px 0;
+    }
+    .cart-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .shopping{
+        width: 736px;
+        box-sizing: border-box;
+    }
+    .shopping-cart{
+        padding: 0 16px;
+    }
+    .mango{
+        width: 734px;
+        margin: 0 0 40px;
+    }
+    .shopping-wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 508px;
+        margin: 0 auto;
+    }
+    .shopping-button{
+        margin-top: 22px;
+        margin-bottom: 64px;
+    }
+    .shopping-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .shopping-form-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .checkout{
+        margin-left: 15px;
+        margin-top: 40px;
+    }
+    .perks-title{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .perks-txt{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .perks-list li{
+        font-size: 16px;
+        line-height: 29px;
+    }
+    .perks{
+        margin-top: 40px;
+        margin-left: 22px;
+    }
+    .registration{
+        margin-top: 40px;
+    }
+    .footer{
+        padding: 0 32px;
+    }
+}
+@media (max-width: 375px){
+    .container{
+        max-width: 358px; 
+    }
+    .top-btn2{
+        margin-top: 12px;
+    }
+    .top-btn3{
+        display: none;
+    }
+    .top-btn4{
+        display: none;
+    }
+    .top-right{
+        display: flex;
+        flex-direction: row-reverse;
+        min-width: 100px;
+    }
+    .brand-man{
+        height: 0px;
+        width: 0px;
+    }
+    .text-block{
+        margin: 148px 0px;
+        min-width: 270px;
+    }
+    .brand-title{
+        font-size: 30px;
+        line-height: 33px;
+    }
+    .brand-subtitle{
+        font-size: 30px;
+        line-height: 20px;
+    }
+    .brand{
+        flex-direction: column;
+        align-items: center;
+    }
+    .big{
+        font-size: 36px;
+    }
+    .triplet{
+        flex-direction: column;
+        align-items: center;
+        width: 375px;
+        margin-top: 64px;
+    }
+    .triplet-man{
+        width: 343px;
+        height: 247px;
+        margin-bottom: 32px;
+    }
+    .triplet-woman{
+        width: 343px;
+        height: 247px;
+        margin-bottom: 32px;
+    }
+    .triplet-kid{
+        width: 343px;
+        height: 247px;
+        margin-bottom: 32px;
+    }
+    .triplet-wide{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        margin-top: 0px;
+    }
+    .wide{
+        width: 343px;
+        height: 111px;
+    }
+    .items-title{
+        margin-top: 64px;
+    }
+    .items-text{
+        margin-bottom: 64px;
+    }
+    .items-product{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .product{
+        margin-bottom: 16px;
+    }
+    .terms{
+        margin-top: 96px;
+        padding-bottom: 33px;
+    }
+    .subscribe{
+        width: 375px;
+        height: 610px;
+        background-size: fill;
+    }
+    .subscribe-info{
+        margin-top: 64px;
+        margin-bottom: 59px;
+    }
+    .footer-wrapper{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer-icons{
+        margin-top: 52px;
+        margin-bottom: 49px;
+    }
+    .footer-text{
+        margin: 0 0 9px 0;
+    }
+    .subscribe-input{
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe-input-low{
+        margin: 0 auto;
+    }
+    .subscribe-subtitle{
+        margin-bottom: 22px;
+    }
+    .items-list li{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .arrivals-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .arrivals-text-left{
+        margin: 24px 0 32px;
+    }
+    .arrivals-text-right{
+        margin: 0 0 46px;
+    }
+    .items-filter{
+        display: none;
+    }
+    .filter-img{
+        width: 37px;
+        height: 25px;
+        margin-left: 8px;
+    }
+    .large-woman{
+        width: 280px;
+        height: 454px;
+    }
+    .collection-text{
+        width: 325px;
+    }
+    .collection-list li{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .mango-img{
+        width: 143px;
+        height: 188px;
+        margin-top: 0px;
+        display: block;
+        object-fit: cover;
+    }
+    .mango{
+        width: 358px;
+    }
+    .mango-info{
+        padding: 14px 12px 0px 17px;
+    }
+    .shopping{
+        width: 358px;
+    }
+    .shopping-wrapper{
+        width: 360px;
+    }
+    .extra-title{
+        margin: 50px 0;
+    }
+    .mango-title{
+        font-size: 16px;
+        line-height: 19px;
+        width: 140px;
+    }
+    .mango-btn-x{
+        width: 10px;
+        height: 11px;
+        top: 17px;
+        right: 15px;
+    }
+    .mango-x{
+        width: 10px;
+        height: 11px;
+    }
+    .mango-list{
+        margin-top: 25px;
+    }
+    .mango-list li{
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 4px;
+    }
+    .mango-cost{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .mango-quantity{
+        width: 24px;
+        height: 15px;
+    }
+    .shopping{
+        margin-top: 59px;
+    }
+    .shopping-button{
+        width: 175px;
+        height: 33px;
+        box-sizing: border-box;
+    }
+    .shopping-form-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .checkout{
+        margin-left: 0px;
+    }
+    .registration-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .registration-btn{
+        margin-bottom: 24px;
+    }
+    .perks{
+        margin-left: 0px;
+        margin-bottom: 100px;
+    }
 }
